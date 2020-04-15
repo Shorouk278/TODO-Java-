@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="additem-borderpane" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddItemController">
+   <center>
+      <Pane prefHeight="365.0" prefWidth="580.0" styleClass="additem-pane" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="192.0" prefWidth="349.0">
+               <children>
+                  <TextField fx:id="itemTitle" prefHeight="30.0" prefWidth="326.0" promptText="Enter Item Title" styleClass="titleItem-txt">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="10.0" />
+                     </VBox.margin></TextField>
+                  <TextArea fx:id="itemDescription" prefHeight="175.0" prefWidth="143.0" promptText="Item Description" styleClass="descriptionItem-arera">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin></TextArea>
+                  <Button fx:id="saveBtn" mnemonicParsing="false" onAction="#saveBtnPressed" styleClass="addItem-button" text="Save" wrapText="true" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="100.0" top="10.0" />
+                     </VBox.margin></Button>
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="20.0" top="10.0" />
+         </BorderPane.margin>
+      </Pane>
+   </center>
+   <top>
+      <HBox alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="400.0" BorderPane.alignment="TOP_LEFT">
+         <children>
+            <Button fx:id="close_additem" mnemonicParsing="false" onAction="#closeAddItem" prefHeight="25.0" prefWidth="29.0" styleClass="close-additem-button" text="X">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

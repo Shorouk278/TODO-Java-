@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="683.0" maxWidth="950.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" styleClass="recovery-borderPane" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RecoveryController">
+   <center>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" styleClass="recovery-pane" stylesheets="@../../ToDoClient/src/todoclient/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="answer_two_textfield" layoutX="72.0" layoutY="232.0" maxHeight="30.0" maxWidth="521.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="257.0" promptText="Insert Answer" styleClass="recovery_txt" />
+            <Label fx:id="question1_lbl" layoutX="325.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="74.0" styleClass="error-massage" />
+            <Label fx:id="question2_lbl" layoutX="324.0" layoutY="232.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="284.0" styleClass="error-massage" />
+            <Label fx:id="user_name_lbl" layoutX="326.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="296.0" styleClass="error-massage" />
+            <TextField fx:id="user_name_textfield" layoutX="75.0" layoutY="100.0" maxHeight="30.0" maxWidth="510.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="277.0" promptText="User Name" styleClass="recovery_txt" />
+            <TextField fx:id="answer_one_textfield" layoutX="72.0" layoutY="170.0" maxHeight="168.0" maxWidth="513.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="246.0" promptText="Insert Answer" styleClass="recovery_txt" />
+            <Label fx:id="question_one_label" layoutX="71.0" layoutY="138.0" maxHeight="55.0" maxWidth="511.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="304.0" styleClass="Q-label" text="What is your favourite song ?" textFill="WHITE" />
+            <Label fx:id="question_two_label" layoutX="71.0" layoutY="198.0" maxHeight="80.0" maxWidth="513.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="279.0" styleClass="Q-label" text="What is your favourite movie ?" textFill="WHITE" />
+            <Button fx:id="submit_btn" layoutX="75.0" layoutY="283.0" maxHeight="30.0" maxWidth="517.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#submitAction" prefHeight="30.0" prefWidth="292.0" styleClass="recovery-button" text="Submit" />
+            <Label fx:id="recovery_password_label" alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="345.0" maxHeight="289.0" maxWidth="487.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="231.0" styleClass="error-massage" textAlignment="CENTER" />
+            <Hyperlink alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="326.0" onAction="#backToLogin" prefHeight="23.0" prefWidth="126.0" text="Login" />
+            <Label alignment="CENTER" layoutX="94.0" layoutY="16.0" prefHeight="81.0" prefWidth="203.0" text="Recovery" textFill="WHITE">
+               <font>
+                  <Font name="Brush Script MT Italic" size="48.0" />
+               </font>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </Pane>
+   </center>
+   <top>
+      <Pane fx:id="recovery_pane" onMouseExited="#hideCloseBtn" onMouseMoved="#showCloseBtn" prefHeight="71.0" prefWidth="1332.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="close_recovery" mnemonicParsing="false" onAction="#closeRecovery" prefHeight="60.0" prefWidth="61.0" styleClass="close-recovery-btn" text="X">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="650.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

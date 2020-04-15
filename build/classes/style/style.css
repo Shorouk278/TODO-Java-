@@ -1,0 +1,504 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 26, 2020, 9:05:08 PM
+    Author     : Fouad
+*/
+
+.error-massage{
+    -fx-font-size:16px;
+    -fx-text-fill :red;
+    -fx-text-style:bold;
+    -fx-pref-width:300;
+}
+
+.Q-label{
+    -fx-font-size:16px;
+    -fx-text-style:bold;
+    -fx-pref-width:300;
+}
+
+/* login page */ 
+.login_txt{
+    -fx-font-size:16px;
+    -fx-background-radius:5px;
+    -fx-padding:5px;
+    -fx-pref-width:250;
+}
+.login-borderpane{
+    -fx-background-image: url("header.jfif");
+    -fx-background-size: cover;
+}
+.login-pane{
+    -fx-pref-tile-width: 200px;
+    -fx-pref-tile-height:400px;
+    -fx-background-color:black;
+    -fx-opacity: 0.6;
+
+}
+.login-pane:hover{
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}
+.login-button{
+    -fx-background-color:  #6622CC;
+    /*#ff0080;*/
+    -fx-pref-width:250;
+    -fx-font-size:16pt; 
+    -fx-padding:5px;
+    -fx-background-radius:5px;
+    -fx-text-fill: white;
+
+}
+.close-login-btn,.close-sign-btn,.close-home,.close-recovery-btn,.close-addlist-btn{
+    -fx-cursor: hand;
+    -fx-text-fill:white;
+    -fx-background-radius: 5em;
+    -fx-min-width: 60px; 
+    -fx-min-height: 60px; 
+    -fx-max-width:60px; 
+    -fx-max-height:60px; 
+    -fx-background-color:black;
+    -fx-background-insets: 0px; 
+    -fx-padding: 0px;
+    -fx-cursor: hand;
+    -fx-opacity: 0.3;
+}
+/* end login page */
+
+
+
+
+/* connect to server */
+.connect-server_txt{
+    -fx-font-size:14px;
+    -fx-background-radius:5px;
+    -fx-padding:5px;
+    -fx-pref-width:300;
+}
+.connect-button{
+    -fx-background-color:#6622CC;
+    /*#ff0080 ;*/
+    -fx-text-fill: white;
+    -fx-font-size :12pt;
+    -fx-pref-width:160;
+    -fx-background-radius:5px;
+    -fx-cursor:hand;
+    -fx-text-style:bold;
+    -fx-border-radius: 5em;
+
+}
+
+/* its button with add itme button*/
+/* its border pane with add item */
+/* end connect to server */
+
+
+/* sign up */
+.signup-borderpane{
+    -fx-background-image: url("signup.jfif");
+    -fx-background-size: cover;
+}
+
+.signup-pane{
+    -fx-pref-tile-width: 200px;
+    -fx-pref-tile-height:400px;
+    -fx-background-color:black;
+    -fx-opacity: 0.6;
+}
+.signup-pane:hover{
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}
+.signup_txt{
+    -fx-font-size:16px;
+    -fx-background-radius:5px;
+    -fx-padding:5px;
+    -fx-pref-width:250;
+}
+.signup-button{
+    -fx-background-color:#6622CC;
+    -fx-pref-width:250;
+    -fx-font-size:16pt; 
+    -fx-padding:5px;
+    -fx-background-radius:5px;
+    -fx-text-fill: white;
+}
+
+/* end sign up */
+
+/* add item */
+.titleItem-txt{
+    -fx-font-size:14px;
+    -fx-background-radius:5px;
+    -fx-padding: 5px;
+    -fx-pref-width:150;
+}
+
+.descriptionItem-arera{
+    -fx-background-radius: 5px;
+    -fx-pref-width:150;
+}
+.titleItem-txt:active,
+.descriptionItem-arera:active{
+    -fx-border-color: #eb988d;
+    -fx-background-radius:5px;
+}
+
+.addItem-button{
+    -fx-background-color:#6622CC;
+    -fx-pref-width:250;
+    -fx-font-size:16pt; 
+    -fx-padding:5px;
+    -fx-background-radius:5px;
+    -fx-text-fill: white;
+
+}
+
+.additem-borderpane{
+    -fx-background-color:black;
+    -fx-border-radius:1em;
+    -fx-border-color:#cbaccc;
+    -fx-opacity: 0.8;
+
+}
+
+.close-additem-button
+{
+    -fx-cursor: hand;
+    -fx-text-fill:white;
+    -fx-background-radius: 5em;
+    -fx-min-width: 20px; 
+    -fx-min-height: 20px; 
+    -fx-max-width: 20px; 
+    -fx-max-height: 20px; 
+    -fx-background-color:#ff0080;
+    -fx-background-insets: 0px; 
+    -fx-padding: 0px;
+
+}
+/* end add item */
+
+
+/* home page*/
+.top-hbox{
+    -fx-background-color:black;
+}
+.top-toolbar{
+    -fx-background-color:black;
+}
+.add-list-btn,.statistics-btn,#friend-button,.notification-btn,.logout-btn,.assign-request{
+    -fx-cursor: hand;
+    /*-fx-background-radius: 5em;*/
+    -fx-min-width: 40px; 
+    -fx-min-height: 40px; 
+    -fx-max-width: 40px; 
+    -fx-max-height: 40px; 
+    -fx-background-size: 100%;
+    -fx-background-color: black;
+}
+
+.add-list-btn
+{ 
+    -fx-background-image: url("plus.png");
+}
+.statistics-btn
+{
+    -fx-background-image: url("diagram.png");
+}
+#friend-button{
+    -fx-background-image: url("friends2.png");
+}
+.notification-btn{
+    -fx-background-image: url("bell.png");
+}
+.logout-btn{
+    -fx-background-image: url("logout.png");
+}
+.assign-request
+{
+    -fx-background-image: url("note.png");
+}
+
+.username-home-label{
+    /*-fx-pref-width:300;*/
+    -fx-text-fill:white;
+}
+
+.search-txt-home{
+    -fx-font-size:14px;
+    -fx-background-radius:5px;
+    -fx-padding:5px;
+    -fx-pref-width:260;
+}
+.search-label-home,.friendlist-label{
+    -fx-font-size:16px;
+    -fx-text-style:bold;
+    -fx-pref-width:200;
+}
+.project-name-label{
+    /*-fx-pref-width:200;*/
+}
+/*.addfriend{
+    -fx-border-raduis: 5px;
+    -fx-text-fill:#ffffff;
+    -fx-background-color:#ff0080;
+}*/
+.close-home{
+    -fx-background-color:red;
+    -fx-opacity: 1;
+}
+
+.friend-name{
+    -fx-font-size:12pt;
+
+}
+.remove-friend,.remove-item-btn{
+    -fx-background-image:url("delete.png");
+    -fx-min-width: 30px; 
+    -fx-min-height: 25px; 
+    -fx-max-width: 30px; 
+    -fx-max-height: 25px;
+    -fx-background-size: 100%;
+    -fx-background-color:white;
+    -fx-cursor:hand;
+}
+.friend-state{
+    -fx-alignment: center;
+}
+.menu-btn{
+    -fx-background-image:url("menu.png");
+    -fx-min-width: 30px; 
+    -fx-min-height: 25px; 
+    -fx-max-width: 30px; 
+    -fx-max-height: 25px;
+    -fx-background-size: 100%;
+}
+
+.card-pane{
+    -fx-background-color:grey;
+    -fx-border-radius: 5em;
+}
+.toolbar-card{
+     -fx-background-color:grey;
+     -fx-border-radius: 5em;
+}
+.list-title{
+    -fx-font-size:14px;
+    -fx-background-radius:5px;
+    -fx-padding:5px;
+    -fx-pref-width:200;
+    -fx-background-color:grey;
+    -fx-text-fill: white;
+    -fx-font-weight:bold;
+}
+.listHome-label{
+    -fx-font-size:14px;
+    -fx-text-style:bold;
+    -fx-pref-width:100;
+    -fx-text-fill: white;
+    
+}
+.saveChange-btn{
+     -fx-background-color:  #6622CC;
+    /*#ff0080;*/
+    -fx-font-size:10pt; 
+    -fx-padding:5px;
+    -fx-background-radius:5px;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+/* end home page */
+
+
+
+/* recovery */
+.recovery-borderPane{
+    -fx-background-image: url("recovery.PNG");
+    -fx-background-size: cover;
+}
+
+.recovery-pane{
+    -fx-pref-tile-width: 200px;
+    -fx-pref-tile-height:400px;
+    -fx-background-color:black;
+    -fx-opacity: 0.6;
+    -fx-alignment-adjust: central;
+}
+.recovery-pane:hover{
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}
+.recovery_txt{
+    -fx-font-size:16px;
+    -fx-background-radius:5px;
+    -fx-padding:5px;
+    -fx-pref-width:250;
+}
+.recovery-button{
+    -fx-background-color:#6622CC;
+    -fx-pref-width:250;
+    -fx-font-size:16px; 
+    -fx-padding:5px;
+    -fx-background-radius:5px;
+    -fx-text-fill: white;
+}
+
+/*end recovery */
+/* add list */
+.addlist-borderPane{
+    -fx-background-image: url("photo1.PNG");
+    -fx-background-size: cover;
+}
+.addlist-pane{
+    -fx-pref-tile-width: 200px;
+    -fx-pref-tile-height:400px;
+    -fx-background-color:black;
+    -fx-opacity: 0.6;
+}
+
+.addlist-pane:hover{
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}
+
+.addlist_txt{
+    -fx-font-size:16px;
+    -fx-background-radius:5px;
+    -fx-padding:5px;
+    -fx-pref-width:250;
+}
+.addlist_date{
+    -fx-font-size:15px;
+    -fx-background-radius:5px;
+    -fx-padding:2px;
+    -fx-pref-width:250;
+
+}
+
+.addlist_color{
+    -fx-font-size:10px;
+    -fx-background-radius:5px;
+    -fx-pref-width:250;
+
+}
+
+.addlist-button{
+    -fx-background-color:#6622CC;
+    -fx-pref-width:250;
+    -fx-font-size:16px; 
+    -fx-padding:5px;
+    -fx-background-radius:5px;
+    -fx-text-fill: white;
+}
+
+.addlist-pane{
+    -fx-pref-tile-width: 200px;
+    -fx-pref-tile-height:400px;
+    -fx-background-color:black;
+    -fx-opacity: 0.6;
+}
+.addlist-pane:hover{
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}
+/* end add list */
+
+
+/*start item*/
+
+.item_borderPane{
+    -fx-background-color:black;
+    -fx-background-image: url("header.png");
+    -fx-background-size: cover;
+    
+}
+.item-label{
+    -fx-font-size:16px;
+    -fx-text-style:bold;
+    -fx-pref-width:110;
+    -fx-text-fill: white;
+    
+}
+.item-field{
+    -fx-font-size:16px;
+    -fx-background-radius:5px;
+    -fx-padding:5px;
+    -fx-pref-width:300;
+}
+.top-pane-item{
+    -fx-background-color: black;
+}
+.item-pane{
+    -fx-background-color: black;
+    -fx-opacity: 0.7;
+}
+.item-btn{
+     -fx-background-color:  #6622CC;
+    /*#ff0080;*/
+    -fx-font-size:10pt; 
+    -fx-padding:5px;
+    -fx-background-radius:5px;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+/*end item*/
+
+
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color: #6622CC; 
+}
+.table-view .column-header .label{
+    -fx-text-fill:  white;
+    -fx-font-weight: bolder; 
+    -fx-alignment: CENTER;
+    -fx-font-size:12pt;
+
+}
+.table-view .cell{
+    -fx-cell-size: 35;
+    -fx-alignment: center-left;
+    -fx-text-fill: black;
+    -fx-alignment: CENTER_LEFT;
+    -fx-margin-left:30px;
+    -fx-font-size:12pt;
+    -fx-cursor: hand;
+}
+.table-row-cell:selected {
+    -fx-background-color:lightblue; 
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 2em;
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color:derive( #6622CC,80%);
+    -fx-background-radius: 2em;
+    -fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #6622CC,90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+
+}
+
+
